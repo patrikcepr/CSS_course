@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+.main-box {
+  color: white;
+  background-color: navy;
+  padding: 30px 20px 50px 105px;
+  margin: 10px 15px 25px 50px;
+  width: 20%;
+  height: 300px;
+  display: inline-block;
+}
+.main-box-1 {
+  display: none;
+}
+div:last-child:hover {
+  color: red;
+  background-color: grey;
+}
