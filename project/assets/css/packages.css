@@ -1,0 +1,43 @@
+.package {
+  display: block;
+  background: #8BC34A;
+  border-color: #388E3C;
+  border-style: solid;
+  border-width: 4px 4px 4px 0;
+  padding: 32px 16px;
+  margin: 32px 0;
+  width: 80%;
+}
+.package a {
+  text-decoration: none;
+  display: block;
+}
+.package:hover,
+.package:active {
+  border-color: #FF0000;
+}
+.package .package__title {
+  color: #212121;
+}
+.package .package__descritption {
+  color: #757575;
+}
+.package .package__text {
+  display: block;
+  background: #fff;
+  color: #388E3C;
+  border: 2px solid #388E3C;
+  padding: 16px;
+}
+#free {
+  background: #C8E6C9;
+}
+#premium {
+  background: #388E3C;
+}
+#premium h1 {
+  color: #fff;
+}
+#premium h2 {
+  color: #BDBDBD;
+}

@@ -10,7 +10,7 @@
 
 }
 .section-title {
-  color: #2ddf5c;
+  color: #4CAF50;
   text-align: center;
 }
 #product-overview h1 {
@@ -18,7 +18,7 @@
   font-family: Anton, sans-serif;
 }
 .plan {
-  background: #7acc68;
+  background: #C8E6C9;
   text-align: center;
   padding: 16px;
   margin: 8px;
@@ -27,19 +27,19 @@
   vertical-align: middle;
 }
 .plan--highlighted {
-  background: #508444;
+  background: #8BC34A;
   color: #fff;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 .plan__annotation {
   background: #fff;
-  color: #508444;
+  color: #388E3C;
   padding: 8px;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 .plan__title {
-  color: #0e4f1f;
+  color: #388E3C;
 }
 .plan--highlighted .plan__title {
   color: #fff;
@@ -48,7 +48,7 @@
   color: #555;
 }
 .plan--highlighted .plan__price {
-  color: #0e4f1f;
+  color: #388E3C;
 }
 .plan__conditions {
   list-style: none;
