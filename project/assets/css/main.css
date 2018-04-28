@@ -1,6 +1,6 @@
 #product-overview {
   color: #fff;
-  /* background-color: #ff1b68; */
+  /* background-color: #E91E63; */
   background: url('../images/freedom.jpg');
   background-size: cover;
   width: 100%;
@@ -16,6 +16,11 @@
 #product-overview h1 {
   color: white;
   font-family: Anton, sans-serif;
+}
+.plan__list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 .plan {
   background: #C8E6C9;
@@ -60,7 +65,7 @@
 }
 
 #key-features {
-  background: #ff1b68;
+  background: #E91E63;
   margin-top: 80px;
 }
 #key-features .section-title {
@@ -80,7 +85,7 @@
   vertical-align: top;
 }
 .key-feature__image {
-  background: #ffcefe;
+  background: #FCE4EC;
   width: 128px;
   height: 128px;
   border: 2px solid #ddd;

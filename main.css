@@ -7,7 +7,7 @@ body {
 }
 #product-overview {
   color: #fff;
-  /* background-color: #ff1b68; */
+  /* background-color: #E91E63; */
   background: url('freedom.jpg');
   background-size: cover;
   width: 100%;
@@ -65,13 +65,13 @@ body {
 }
 .main-nav__item--cta a {
   color: #fff;
-  background-color: #ff1b68;
+  background-color: #E91E63;
   padding: 8px 16px;
   border-radius: 8px;
 }
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
-  color: #ff1b68;
+  color: #E91E63;
   background-color: #fff;
   padding: 8px 16px;
   border-radius: 8px;
