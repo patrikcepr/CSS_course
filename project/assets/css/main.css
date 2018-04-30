@@ -1,8 +1,9 @@
 #product-overview {
   color: #fff;
-  background-image: url('../images/freedom.jpg');
-  background-size: cover;
-  background-position: 0% 50%;
+  /* background-image: url('../images/freedom.jpg'); */
+  /* background-size: cover; */
+  /* background-position: left 0% bottom 80%; */
+  background-image: linear-gradient(35deg, red, blue);
   width: 100%;
   height: calc(100vh - 143px);
   padding: 20px;
