@@ -2,8 +2,8 @@ main {
   padding-top: 32px;
 }
 .background {
-  background: url('../images/plans-background.jpg');
-  background-size: cover;
+  background: url('../images/plans-background.jpg') center/cover;
+  filter: grayscale(70%);
   position: fixed;
   z-index: -1;
   width: 100vw;
@@ -34,6 +34,10 @@ main {
 .package .package__subtitle {
   color: #757575;
 }
+#plus .package__subtitle {
+  color: #fff;
+}
+
 .package__badge {
   color: #fff;
   position: absolute;
