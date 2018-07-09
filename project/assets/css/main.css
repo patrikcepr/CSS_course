@@ -1,43 +1,46 @@
 #product-overview {
   color: #fff;
-  background: linear-gradient(to top, rgba(80, 68, 18, 0.7) 10%, transparent), url('../images/freedom.jpg') left 0% bottom 80%/cover no-repeat border-box, radial-gradient(ellipse 50px 100px at 20% 50%, red, white, blue), #C2185B;
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.7) 10%, transparent),
+  url('../images/freedom.jpg') left 30% bottom 80%/cover no-repeat border-box,
+  radial-gradient(ellipse 50px 100px at 20% 50%, red, white, blue), #C2185B;
   /* background-image: radial-gradient(ellipse 50px 100px at 20% 50%, red, white, blue); */
   width: 100vw;
-  height: 66vh;
+  height: 60vh;
   /* height: calc(100vh - 143px); */
   padding: 1.25rem;
   margin-top: 0;
   position: relative;
 }
-.section-title {
-  color: #4CAF50;
-  text-align: center;
-}
+
 #product-overview h1 {
   color: white;
   font-family: Anton, sans-serif;
   position: absolute;
   left: 2rem;
   bottom: 25%;
+  font-size: 1.6rem;
 }
-.plan__list {
-  width: 80%;
-  margin: auto;
+
+.section-title {
+  color: #4CAF50;
   text-align: center;
 }
+
+/* .plan__list {
+  width: 100%;
+  text-align: center;
+} */
 .plan {
   background: #C8E6C9;
   text-align: center;
   padding: 1rem;
-  margin: 0.5rem;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+  margin: 1rem 0;
+  width: 100%;
 }
 .plan--highlighted {
   background: #689F38;
   color: #fff;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7); */
 }
 .plan__annotation {
   background: #fff;
@@ -101,4 +104,113 @@
   font-weight: bold;
   color: #fff;
   font-size: 1.25rem;
+}
+
+/* adding modal */
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
+
+/* media queries */
+@media (min-width: 728px) {
+  #product-overview {
+    height: 50vh;
+  }
+
+  #product-overview h1 {
+    font-size: 2.5rem;
+    left: 10%;
+  }
+
+  .plan__list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .plan {
+    background: #C8E6C9;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+  }
+  .plan--highlighted {
+    background: #689F38;
+    color: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+  .plan__annotation {
+    background: #fff;
+    color: #388E3C;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+  .plan__title {
+    color: #388E3C;
+  }
+  .plan--highlighted .plan__title {
+    color: #fff;
+  }
+  .plan__price {
+    color: #555;
+  }
+  .plan--highlighted .plan__price {
+    color: #388E3C;
+  }
+  .plan__conditions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .plan__condition {
+    margin: 0.5rem 0;
+  }
 }
