@@ -16,6 +16,7 @@ main {
   margin: 1rem 0;
   width: 80%;
   position: relative;
+  font-family: inherit;
 }
 .package:hover,
 .package:active {
@@ -51,6 +52,11 @@ main {
   color: #388E3C;
   border: 2px solid #388E3C;
   padding: 1rem;
+}
+
+.package__text {
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.5rem;
 }
 #free {
   background: rgba(200, 230, 201, 0.95);
