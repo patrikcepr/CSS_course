@@ -61,6 +61,9 @@
   .testimonial {
     margin: 3rem auto;
     max-width: 90rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .testimonial:first-of-type {
     margin-top: 6rem;
@@ -68,15 +71,11 @@
   .testimonial__info {
     text-align: right;
     padding: 1rem;
-    display: inline-block;
-    vertical-align: middle;
     width: 35%;
   }
   .testimonial__image-container{
     width: 60%;
     max-width: 640px;
-    display: inline-block;
-    vertical-align: middle;
     box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   .testimonial__info {
