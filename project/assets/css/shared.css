@@ -15,15 +15,19 @@
 * {
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
 
 body {
   font-family: "Oswald", sans-serif;
   margin: 0;
-  padding-top: 110px;
-  /* overflow-y: hidden; */
+  height: 100%;
+  display: grid;
+  grid-template-rows: 117px auto fit-content(8rem);
 }
 main {
-  min-height: calc(100vh - 15rem);
+  grid-row: 2/3;
 }
 
 .backdrop {
@@ -156,7 +160,9 @@ main {
 /* footer */
 .main-footer {
   background: #1B5E20;
-  padding: 2rem;
+  grid-row: 3/4;
+  min-height: 8rem;
+  padding-top: 1rem;
   margin-top: 3rem;
 }
 .main-footer__links {
@@ -219,6 +225,9 @@ main {
   }
   .toggle-button {
     display: none;
+  }
+  .main-footer {
+    padding-top: 3rem;
   }
   .main-footer__links {
     flex-flow: row;

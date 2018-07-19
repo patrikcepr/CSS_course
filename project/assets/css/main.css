@@ -4,7 +4,7 @@
   url('../images/freedom.jpg') left 30% bottom 80%/cover no-repeat border-box,
   radial-gradient(ellipse 50px 100px at 20% 50%, red, white, blue), #C2185B;
   /* background-image: radial-gradient(ellipse 50px 100px at 20% 50%, red, white, blue); */
-  width: 100vw;
+  /* width: 100vw; */
   height: 60vh;
   /* height: calc(100vh - 143px); */
   padding: 1.25rem;
