@@ -17,6 +17,7 @@ main {
   width: 80%;
   position: relative;
   font-family: inherit;
+  overflow: hidden;
 }
 .package:hover,
 .package:active {
@@ -43,9 +44,12 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 1rem;
+  margin: 0;
   padding: 0.5rem;
   background: #D50000;
+  transform: rotate(45deg) translate(3.3rem, -0.6rem);
+  width: 12rem;
+  text-align: center;
 }
 .package .package__text {
   background: #fff;
@@ -88,7 +92,7 @@ main {
     margin: 0 auto;
   }
 }
-@media (min-width: 90rem) {
+@media (min-width: 58rem) {
   .package {
     border: 4px solid #388E3C;
   }
