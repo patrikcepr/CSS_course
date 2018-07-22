@@ -71,8 +71,6 @@ main {
 .main-nav__item {
   margin: 0.6rem;
 }
-.main-nav__item:hover {
-}
 .main-nav__item a,
 .mobile-nav__item a {
   color: #388E3C;
@@ -84,6 +82,9 @@ main {
 .main-nav__item a:active {
   color: #fff;
   border-bottom: 5px solid #388E3C;
+}
+.main-nav__item--cta {
+  animation: wiggle 300ms 2s ease-out 6 none;
 }
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
@@ -241,5 +242,17 @@ main {
   }
   .main-footer__link {
     margin: 0 1rem;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    tranform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(-7deg);
+  }
+  100% {
+    transform: rotateZ(7deg);
   }
 }
