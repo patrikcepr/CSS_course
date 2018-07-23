@@ -11,7 +11,7 @@ main {
 }
 .package {
   background: rgba(104, 159, 56, 0.95);
-  border: 4px solid #388E3C;
+  border: 4px solid var(--dark-green);
   border-left: none;
   margin: 1rem 0;
   width: 80%;
@@ -19,6 +19,10 @@ main {
   font-family: inherit;
   overflow: hidden;
 }
+.package:hover {
+  animation: jumpup 100ms ease-out alternate;
+}
+
 .package:hover,
 .package:active {
   border-color: #D50000;
@@ -53,8 +57,8 @@ main {
 }
 .package .package__text {
   background: #fff;
-  color: #388E3C;
-  border: 2px solid #388E3C;
+  color: var(--dark-green);
+  border: 2px solid var(--dark-green);
   padding: 1rem;
 }
 
@@ -65,7 +69,7 @@ main {
 #free {
   background: rgba(200, 230, 201, 0.95);
   float: right;
-  border: 4px solid #388E3C;
+  border: 4px solid var(--dark-green);
   border-right: none;
   text-align: right;
 }
@@ -77,7 +81,7 @@ main {
   clear: both;
 }
 #premium {
-  /* background: #388E3C; */
+  /* background: var(--dark-green); */
   background: rgba(56, 142, 60, 0.95);
 }
 #premium h1 {
@@ -94,9 +98,20 @@ main {
 }
 @media (min-width: 58rem) {
   .package {
-    border: 4px solid #388E3C;
+    border: 4px solid var(--dark-green);
   }
   #free {
-    border: 4px solid #388E3C;
+    border: 4px solid var(--dark-green);
+  }
+}
+@keyframes jumpup {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(2%);
   }
 }

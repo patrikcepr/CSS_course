@@ -41,7 +41,7 @@ main {
 }
 
 .signup-form input[type="checkbox"]:checked {
-  border-color: #388E3C;
+  border-color: var(--dark-green);
   background: #4CAF50;
 }
 
@@ -56,7 +56,7 @@ main {
 .signup-form input:focus {
   outline: none;
   background: #d8f3df;
-  border-color: #388E3C;
+  border-color: var(--dark-green);
 }
 
 .signup-form button[type="submit"] {

@@ -27,6 +27,9 @@
 }
 
 .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -42,13 +45,13 @@
 }
 .plan__annotation {
   background: #fff;
-  color: #388E3C;
+  color: var(--dark-green);
   padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 .plan__title {
-  color: #388E3C;
+  color: var(--dark-green);
   margin-top: 0.5rem;
 }
 .plan--highlighted .plan__title {
@@ -58,7 +61,7 @@
   color: #555;
 }
 .plan--highlighted .plan__price {
-  color: #388E3C;
+  color: var(--dark-green);
 }
 .plan__conditions {
   list-style: none;
@@ -70,7 +73,7 @@
 }
 
 #key-features {
-  background: #E91E63;
+  background: var(--pink-punk);
   margin-top: 5rem;
 }
 #key-features .section-title {
@@ -82,6 +85,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,6 +177,9 @@
   }
 
   .plan__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
